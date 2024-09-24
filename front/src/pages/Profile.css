@@ -1,0 +1,107 @@
+.page-and-footer {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  background: linear-gradient(135deg, #007bff, #800080);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  max-width: 560px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  text-align: center;
+  padding: 10px;
+}
+
+.secondary {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-bottom: 10px;
+}
+
+.goodButtons button {
+  background: linear-gradient(135deg, #007bff, #800080);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.goodButtons button:hover {
+  background: linear-gradient(135deg, #0056b3, #660066);
+}
+
+.badButtons button {
+  background: linear-gradient(135deg, #ff00ff, #830000);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.badButtons button:hover {
+  background: linear-gradient(135deg, #b100b1, #530000);
+}
+
+button:focus {
+  outline: none;
+}
+
+.main h2 {
+  margin: 5px 0;
+  line-height: 1;
+}
+
+.main p, .secondary p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .goodButtons button, .badButtons button {
+    width: 100%;
+  }
+}

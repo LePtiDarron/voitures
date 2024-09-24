@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-and-footer {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-page {
+  flex-grow: 1;
+  background: linear-gradient(135deg, #007bff, #800080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.signup-form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.signup-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.signup-form input::placeholder {
+  color: white;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #007bff, #800080);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #660066);
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.login-link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

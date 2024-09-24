@@ -1,0 +1,75 @@
+.create-car-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.create-car-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.create-car-form {
+  margin: 50px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.create-car-input,
+.create-car-select,
+.create-car-file-input {
+  width: 100%;
+  padding: 10px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.create-car-file-input {
+  padding: 5px;
+}
+
+.create-car-button {
+  background: linear-gradient(135deg, #57ec00, #00925a);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-car-button:hover {
+  background: linear-gradient(135deg, #49c700, #007045);
+}
+
+.create-car-input,
+.create-car-select,
+.create-car-file-input,
+.create-car-button {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .create-car-form {
+    padding: 15px;
+  }
+
+  .create-car-title {
+    font-size: 20px;
+  }
+
+  .create-car-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

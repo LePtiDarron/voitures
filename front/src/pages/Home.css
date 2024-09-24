@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #003973, #E5E5BE);
+}
+
+.home-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  padding: 20px 0;
+}
+
+.home-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2em;
+}
+
+.services-section {
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px 20px;
+  border: 1px solid #DDDDDD20;
+  background-color: #DDDDDD05;
+  border-radius: 20px;
+}
+
+.home-container h2 {
+  margin-left: 20px;
+  font-size: 2em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 1.5em;
+  color: #080808;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1.2em;
+  color: #111111;
+}
+
+.home-carousel-container {
+  margin-bottom: 40px;
+  overflow: hidden
+}
+
+.home-carousel-container .slick-slide img {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.home-carousel-container .slick-prev {
+  left: 20px;
+}
+
+.home-carousel-container .slick-next {
+  right: 20px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  z-index: 1;
+  color: #007BFF;
+}
+
+.admin-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.admin-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.admin-button {
+  background: linear-gradient(135deg, #57ec00, #00925a);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+  background: linear-gradient(135deg, #49c700, #007045);
+}
+
+@media (max-width: 768px) {
+  .car-card {
+    width: 100%;
+  }
+}

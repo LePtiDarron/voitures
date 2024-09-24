@@ -1,0 +1,59 @@
+/* Filters.css */
+
+.filters {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.filters-container input,
+.filters-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.apply-button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #007bff, #800080);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+  transition: background 0.3s ease;
+}
+
+.apply-button:hover {
+  background: linear-gradient(135deg, #0056b3, #660066);
+}
+
+.apply-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .filters-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .apply-button {
+    grid-column: auto;
+  }
+}

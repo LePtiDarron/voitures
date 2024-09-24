@@ -1,0 +1,64 @@
+.page-and-footer {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-picture-page {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  background: linear-gradient(135deg, #007bff, #800080);
+}
+
+.edit-picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.edit-picture-form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.edit-picture-form input,
+.edit-picture-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.edit-picture-form button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #007bff, #800080);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.edit-picture-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #660066);
+}

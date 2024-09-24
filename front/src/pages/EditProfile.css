@@ -1,0 +1,75 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-and-footer {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile-page {
+  flex-grow: 1;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.edit-profile-form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.edit-profile-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+
+.edit-profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.edit-profile-form input::placeholder {
+  color: white;
+}
+
+.edit-profile-form button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #007bff, #800080);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.edit-profile-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #660066);
+}
